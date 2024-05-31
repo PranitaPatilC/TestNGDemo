@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Info Suite">
+	<listeners>
+		<listener class-name ="test.Listener"/>
+		</listeners>
+		
+	
+	<parameter name="URL" value = "qa@g.com"/>
+	
+  <test name="Personal Info">
+	  <classes>
+ 
+      <class name="test.NameInfo">
+		</class>
+    </classes>
+  </test>
+  
+  
+   <test name="Nikhil Personal Info">
+    <classes>
+      <class name="test.AddressNikhil"/>
+	<class name="test.NameNikhil"/>
+	     <class name="test.AddressInfo"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

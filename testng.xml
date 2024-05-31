@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Info Suite">
+	<listeners>
+		<listener class-name ="test.Listener"/>
+		</listeners>
+		
+	
+	<parameter name="URL" value = "qa@g.com"/>
+	
+  <test name="Personal Info">
+	<groups>
+		<run>
+			<include name = "JSP"/>
+		</run>
+			
+			
+		
+		
+	</groups>
+	
+	
+    <classes>
+      <class name="test.AddressInfo"/>
+      <class name="test.NameInfo">
+		<methods>
+			<method>
+				<include name = "FatherName"/>
+				<include name = "MotherName"/>
+			</method>
+			
+			
+			
+		</methods>
+		
+		
+		
+		
+		</class>
+    </classes>
+  </test>
+  
+  
+   <test name="Nikhil Personal Info">
+    <classes>
+      <class name="test.AddressNikhil">
+		<methods>
+			<method>
+				<include name ="AddressJSP.*"/>
+				
+				</method>
+			
+			 
+		</methods>
+		</class>
+      <class name="test.NameNikhil"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
